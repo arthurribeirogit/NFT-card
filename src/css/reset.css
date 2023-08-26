@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    /* não vai contar o padding de dentro do container,vai manter a mesma largura do cartão mesmo que dê um número para padding ou border */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

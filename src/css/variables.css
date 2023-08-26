@@ -1,0 +1,8 @@
+:root {
+    --cor-primaria-suave: hsl(215, 51%, 70%);
+    --cor-primaria-mediana: hsl(178, 100%, 50%);
+
+    --cor-background: hsl(217, 54%, 11%);
+    --cor-fundo-cartao:hsl(216, 50%, 16%);
+    --cor-linha: hsl(215, 32%, 27%);
+}

@@ -1,0 +1,141 @@
+html {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--cor-background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+}
+
+p {
+    font-size: 18px;
+}
+
+section div {
+    gap: 25px;
+}
+
+.container {
+    max-width: 346px;
+    background-color: var(--cor-fundo-cartao);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5%;
+
+}
+
+.descricao .link-image {
+    display: flex;
+    position: relative;
+}
+
+.descricao a img {
+    width: 100%;
+    border-radius: 2%;
+    
+}
+
+.descricao .link-image::before {
+    content: '';
+    background-color: cyan;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   opacity: 0;
+   transition: 0.3s ease-in-out;
+}
+
+.descricao .link-image::after {
+    content: '';
+    background: url(../images/icon-view.svg) no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.descricao .link-image:hover::before{
+    opacity: 0.4;
+}
+
+.descricao .link-image:hover::after{
+    opacity: 1;
+}
+
+.descricao {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.id a h2 {
+    font-size: 22px;
+}
+
+.id a h2:hover {
+    color: var(--cor-primaria-mediana);
+}
+
+.id p {
+    color: var(--cor-primaria-suave);
+    padding-top: 10px;
+}
+
+.descricao p {
+    margin-top: 5px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--cor-primaria-suave);
+}
+
+.valor img {
+    margin-right: 10px;
+}
+
+.valor {
+    color: var(--cor-primaria-mediana);
+}
+
+.tempo {
+    color: var(--cor-primaria-suave);
+}
+
+.tempo img {
+    margin-right: 10px;
+}
+
+
+.rodape-cartao {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    
+}
+
+.rodape-cartao span {
+    color: var(--cor-primaria-suave);
+}
+
+.rodape-cartao img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.rodape-cartao p a:hover {
+    color: var(--cor-primaria-mediana);
+}
